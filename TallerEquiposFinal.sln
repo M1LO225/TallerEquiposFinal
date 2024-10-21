@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TallerEquiposFinal", "TallerEquiposFinal\TallerEquiposFinal.csproj", "{C74E64F3-958F-45F6-8E18-8D812BAEAE60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C74E64F3-958F-45F6-8E18-8D812BAEAE60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C74E64F3-958F-45F6-8E18-8D812BAEAE60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C74E64F3-958F-45F6-8E18-8D812BAEAE60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C74E64F3-958F-45F6-8E18-8D812BAEAE60}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59BF6D13-B1AD-4058-A4DC-61E640841F27}
+	EndGlobalSection
+EndGlobal

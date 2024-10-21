@@ -48,7 +48,7 @@ namespace TallerEquiposFinal.Controllers
         // GET: Equipo/Create
         public IActionResult Create()
         {
-            ViewData["IdEstadio"] = new SelectList(_context.Estadio, "IdEstadio", "IdEstadio");
+            ViewData["IdEstadio"] = new SelectList(_context.Estadio, "IdEstadio", "NombreEstadio");
             return View();
         }
 
@@ -65,7 +65,7 @@ namespace TallerEquiposFinal.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdEstadio"] = new SelectList(_context.Estadio, "IdEstadio", "IdEstadio", equipo.IdEstadio);
+            ViewData["IdEstadio"] = new SelectList(_context.Estadio, "IdEstadio", "NombreEstadio", equipo.IdEstadio);
             return View(equipo);
         }
 
@@ -82,7 +82,7 @@ namespace TallerEquiposFinal.Controllers
             {
                 return NotFound();
             }
-            ViewData["IdEstadio"] = new SelectList(_context.Estadio, "IdEstadio", "IdEstadio", equipo.IdEstadio);
+            ViewData["IdEstadio"] = new SelectList(_context.Estadio, "IdEstadio", "NombreEstadio", equipo.IdEstadio);
             return View(equipo);
         }
 
@@ -118,7 +118,7 @@ namespace TallerEquiposFinal.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdEstadio"] = new SelectList(_context.Estadio, "IdEstadio", "IdEstadio", equipo.IdEstadio);
+            ViewData["IdEstadio"] = new SelectList(_context.Estadio, "IdEstadio", "NombreEstadio", equipo.IdEstadio);
             return View(equipo);
         }
 

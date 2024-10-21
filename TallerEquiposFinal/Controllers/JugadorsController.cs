@@ -48,7 +48,7 @@ namespace TallerEquiposFinal.Controllers
         // GET: Jugadors/Create
         public IActionResult Create()
         {
-            ViewData["IdEquipo"] = new SelectList(_context.Equipo, "IdEquipo", "IdEquipo");
+            ViewData["IdEquipo"] = new SelectList(_context.Equipo, "IdEquipo", "NombreEquipo");
             return View();
         }
 
@@ -65,7 +65,7 @@ namespace TallerEquiposFinal.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdEquipo"] = new SelectList(_context.Equipo, "IdEquipo", "IdEquipo", jugador.IdEquipo);
+            ViewData["IdEquipo"] = new SelectList(_context.Equipo, "IdEquipo", "NombreEquipo", jugador.IdEquipo);
             return View(jugador);
         }
 
@@ -82,7 +82,7 @@ namespace TallerEquiposFinal.Controllers
             {
                 return NotFound();
             }
-            ViewData["IdEquipo"] = new SelectList(_context.Equipo, "IdEquipo", "IdEquipo", jugador.IdEquipo);
+            ViewData["IdEquipo"] = new SelectList(_context.Equipo, "IdEquipo", "NombreEquipo", jugador.IdEquipo);
             return View(jugador);
         }
 

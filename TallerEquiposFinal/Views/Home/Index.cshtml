@@ -2,7 +2,66 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container texto-centrado">
+    <h1>LIGA-PRO</h1>
+    <div class="informacion">
+        <div class="col-md-12 mb-4">
+            <div class="card h-100">
+                <div class="row no-gutters">
+
+                    <div class="col-md-4">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/56/1d/50/estadio-banco-pichincha.jpg?w=500&h=500&s=1" class="card-img-left img-fluid">
+                    </div>
+  
+                    <div class="col-md-8">
+                        <div class="card-body text-left">
+                            <h5 class="card-title">Información del Estadio</h5>
+                            <p class="card-text">Los estadios son estructuras fundamentales para el fútbol, ya que este deporte tiene un arraigo profundo en la cultura deportiva del país. Algunos de los estadios más importantes están localizados en las principales ciudades como Quito, Guayaquil y Cuenca, y son utilizados para partidos de liga, torneos internacionales y partidos de la selección nacional.</p>
+                            <a href="@Url.Action("Index", "Estadio")" class="btn btn-primary">Agregar Estadios</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-12 mb-4">
+            <div class="card h-100">
+                <div class="row no-gutters">
+
+                    <div class="col-md-4">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiA2qoTlaxHDa0_L6mu2jllwllmf-yNYJFKMcOI5UYBl9TpmMKt8ZkPHw8LQTGNBM1dbi0y-FrwCDrk0dD4eChXwmkbTkkxCXs8j9OhGqjqmuwwR6bnoqCkwYmeikb7M3qslnotKl3KrWJ9/s1600/Ecuador+2016+10+11.jpg" class="card-img-left img-fluid">
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="card-body text-left">
+                            <h5 class="card-title">Información del Equipo</h5>
+                            <p class="card-text">En Ecuador, los equipos de fútbol son una parte esencial del tejido social y cultural. Los clubes más importantes del país tienen una rica historia y cuentan con una base de aficionados apasionada.</p>
+                            <a href="@Url.Action("Index", "Equipo")" class="btn btn-primary">Ver Equipos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12 mb-4">
+            <div class="card h-100">
+                <div class="row no-gutters">
+
+                    <div class="col-md-4">
+                        <img src="https://creatucartafifa.es/wp-content/uploads/2021/05/Hero-2-1024x959-1.jpg" class="card-img-left img-fluid">
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="card-body text-left">
+                            <h5 class="card-title">Información del Jugador</h5>
+                            <p class="card-text">El jugador ecuatoriano ha ganado reconocimiento a nivel internacional por su talento, disciplina y capacidad para competir en las mejores ligas del mundo. Ecuador ha producido futbolistas que han triunfado tanto en el país como en el extranjero, abriendo camino para nuevas generaciones.</p>
+                            <a href="@Url.Action("Index", "Jugador")" class="btn btn-primary">Ver Jugadores</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>Bienvenidos a la LigaPro!! <a href="https://ligapro.ec/">para más información click aqui!</a></p>
 </div>
